@@ -1,0 +1,142 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+   {
+     "path": "pages/login/login",
+     "style": {}
+   },
+	 {
+     "path": "pages/main/index",
+     "style": {
+       "navigationStyle": "custom"
+     }
+   },
+	 {
+     "path": "pages/departure/weight/weight",
+     "style": {
+       "navigationBarTitleText": "过磅"
+     }
+   },
+		// {
+    // 	"path" : "pages/departure/weight",
+    // 	"style" : {}
+    // },
+	// {
+	//   // 理货
+	//   "path":"pages/arrival/controlRegister/tally",
+	//   "style": {}
+	// },
+	{
+	  "path": "pages/departure/handover/index"
+	},
+	{
+	  "path": "pages/departure/handover/handover"
+	},
+		{
+		  "path": "pages/departure/transfer/index"
+		},
+		// {
+		//   "path": "pages/main/index",
+		//   "style": {
+		//     "navigationStyle": "custom"
+		//     // "navigationBarTitleText" : "国内进出港",
+		//   }
+		// },
+		{
+		  "path": "pages/departure/transferOpt/index",
+			"style": {
+			  "navigationStyle": "custom",
+				"onReachBottomDistance": 100
+			}
+		},
+		{
+		  "path": "pages/departure/flightDynamics/index"
+		},
+		{
+			"path": "pages/departure/waitingManager/waitingManager",
+			"style": {}
+		},
+    {
+      "path": "pages/departure/stock/index",
+      "style": {
+        "navigationBarTitleText": "库存盘点"
+      }
+    },
+	{ // 库存盘点异常表
+	  "path": "pages/departure/stock/TableForStock"
+	},
+    {
+      "path": "pages/departure/uld/uld",
+      "style": {}
+    }, {
+      "path": "pages/departure/flight/flight",
+      "style": {}
+    },
+    // {
+    //   "path": "pages/departure/waitingManager/waitingManager",
+    //   "style": {}
+    // },
+	{
+		"path" : "pages/departure/waitingManager/uldWaiting",
+		"style" : {}
+	},
+	{
+		"path" : "pages/departure/waitingManager/uldPosition",
+		"style" : {}
+	},
+    {
+      "path": "pages/login/forget",
+      "style": {}
+    }, {
+      "path": "pages/login/register",
+      "style": {}
+    }, { // 复称
+      "path": "pages/departure/reWeight/reWeight",
+      "style": {}
+    },
+	{ // 库存uld出库表
+	  "path": "pages/departure/reWeight/tableForReWeight"
+	},{ 
+      // 异常登记
+      "path":"pages/arrival/abnormalRegister/index",
+      "style": {
+        "navigationBarTitleText": "异常登记"
+      }
+    },
+	{
+	  // 航控登记
+	  "path":"pages/arrival/controlRegister/controlRegister",
+	  "style": {}
+	},
+	{
+	  // 理货
+	  "path":"pages/arrival/controlRegister/tally",
+	  "style": {}
+	}
+      ,{
+            "path" : "pages/login/update",
+            "style" : {}
+        }
+    ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#00B26A",
+    "backgroundColor": "#09BB07",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff",
+    "app-plus": {
+      "softinputMode": "adjustResize"
+    }
+  },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
